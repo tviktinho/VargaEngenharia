@@ -1,0 +1,82 @@
+html,
+body {
+  background-image: url("/img/alekon-pictures-Ly9cGyDn-A8-unsplash.jpg");
+  background-repeat: initial;
+  background-size: cover;
+  background-attachment: scroll;
+  height: 100%;
+  margin: 0;
+  background-color: #f0f0f0; /* Cinza claro */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex: 1; /* Faz o container crescer e ocupar o espaço disponível */
+}
+
+main {
+  flex: 1 0 auto; /* Permite que o main expanda para preencher o espaço disponível */
+}
+
+header,
+footer {
+  background-color: #003366; /* Azul escuro */
+  color: #ffffff; /* Branco */
+}
+
+h1,
+h2 {
+  color: #003366; /* Azul escuro */
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  flex-shrink: 0; /* Impede que o footer encolha */
+}
+
+.btn-primary {
+  background-color: #003366; /* Azul escuro */
+  border-color: #003366; /* Azul escuro */
+}
+
+.btn-primary:hover {
+  background-color: #002244; /* Azul mais escuro */
+  border-color: #002244; /* Azul mais escuro */
+}
+
+.whatsapp-btn {
+  background-color: #25d366; /* Cor oficial do WhatsApp */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  align-items: center;
+  gap: 10px; /* Espaço entre o ícone e o texto */
+  display: block;
+  width: 70px;
+  margin: 0 auto;
+}
+
+.whatsapp-btn img {
+  width: 24px;
+    height: 24px;
+    fill: green; /* Só funciona se o SVG permitir controle de cor via CSS */
+}
+
+/* CSS para telas menores */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  .container {
+    width: 95%;
+  }
+}
