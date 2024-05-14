@@ -2,96 +2,249 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Certificados ART</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <style>
-        /* Ocultar texto dentro dos indicadores, se houver */
-        .carousel-indicators li {
-            text-indent: -999px;
-            /* Empurra o texto para fora da visão */
-            list-style-type: none;
-            /* Remove qualquer estilo de lista padrão */
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Certificados ART</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <style>
+    /* Ocultar texto dentro dos indicadores, se houver */
+    .carousel-indicators li {
+      text-indent: -999px;
+      /* Empurra o texto para fora da visão */
+      list-style-type: none;
+      /* Remove qualquer estilo de lista padrão */
+    }
+  </style>
 </head>
 
 <body>
-    <div class="container">
-        <header>
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#">Certificados ART</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="sobre.html">Sobre</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="contato.html">Contato</a>
-                            </li>
-                            <li>
-                                <a href="https://wa.me/5516993127561?text=Olá!%20Gostaria%20de%20mais%20informações."
-                                    class="whatsapp-btn">
-                                    <img src="./icons/whatsapp.svg" alt="">
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </header>
+  <div class="container">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <img src="./img/vargaEngenharia.webp" class="icon header-icon" alt="icone">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Certificados ART</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="sobre.html">Duvidas
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contato.html">Contato</a>
+              </li>
+              <li>
+                
+                <a href="https://wa.me/5516993127561?text=Olá!%20Gostaria%20de%20mais%20informações."
+                  class="whatsapp-btn">
+                  <img src="./icons/whatsapp.svg" alt="Entrar em contato">
+                  WHATSAPP
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Adicione este botão ao seu HTML -->
+        <label class="switch">
+          <input type="checkbox" id="theme-toggle">
+          <span class="slider round"></span>
+        </label>
+      </nav>
+    </header>
 
-        <main class="container mt-4">
-            <h2>VARGA Engenharia</h2>
-            <p>Aqui você pode emitir seus certificados ART com facilidade e segurança a partir de R$999,99.</p>
+    <main class="container mt-4">
 
-            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
-                    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
-                    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="./img/thisisengineering-zcPeEqmH8oI-unsplash.jpg" class="d-block w-100" alt="Slide 1">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./img/img1.avif" class="d-block w-100" alt="Slide 2">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./img/luke-besley-k5l-zbRSPds-unsplash.jpg" class="d-block w-100" alt="Slide 3">
-                    </div>
-                </div>
-                <!-- Controles Esquerda/Direita -->
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Anterior</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Próximo</span>
-                </a>
-                </a>
+
+      <div id="carouselExampleIndicators" class="carousel slide image-container" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./img/thisisengineering-zcPeEqmH8oI-unsplash.jpg" class="d-block w-100" alt="Slide 1">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/img1.avif" class="d-block w-100" alt="Slide 2">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/luke-besley-k5l-zbRSPds-unsplash.jpg" class="d-block w-100" alt="Slide 3">
+          </div>
+        </div>
+        <!-- Controles Esquerda/Direita -->
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Próximo</span>
+        </a>
+        </a>
+      </div>
+      <br><br>
+
+      <section class="card__container">
+        <div class="card__bx" style="--clr: #5b98eb">
+          <div class="card__data">
+            <div class="card__icon">
             </div>
-            <br><br>
-        </main>
+            <div class="card__content">
+              <h3>Para substituição de piso e azulejo necessito de ART?</h3>
+              <p>Sim! Por mais simples que pareça a execução deste tipo de trabalho, tais intervenções sem as devidas
+                precauções p...</p>
+              <a href="#">Saiba Mais</a>
+            </div>
+          </div>
+        </div>
 
-        <footer class="bg-dark text-white p-3 mt-4" id="footer">
-            <p class="text-center">© 2022 Certificados ART. Todos os direitos reservados.</p>
-            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-        </footer>
-    </div>
+        <div class="card__bx" style="--clr: #5b98eb">
+          <div class="card__data">
+            <div class="card__icon">
+              <i class="fa-brands fa-searchengin"></i>
+            </div>
+            <div class="card__content">
+              <h3>ART laudo engenheiro</h3>
+              <p>Antes de dar início a uma reforma ou obra em sua residência, é crucial terá ART laudo engenheiro.
+                Esse laudo ART (Anot....</p>
+              <a href="#">Saiba Mais</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card__bx" style="--clr: #5b98eb">
+          <div class="card__data">
+            <div class="card__icon">
+              <i class="fa-brands fa-searchengin"></i>
+            </div>
+            <div class="card__content">
+              <h3>Laudo reforma apartamento</h3>
+              <p>O ART laudo é um detalhe crucial para reformas em apartamento, por mais simples que seja a reforma ou a
+                obra.
+                A posse...</p>
+              <a href="#">Saiba Mais</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card__bx" style="--clr: #5b98eb">
+          <div class="card__data">
+            <div class="card__icon">
+              <i class="fa-brands fa-searchengin"></i>
+            </div>
+            <div class="card__content">
+              <h3>Porque preciso de uma ART para reforma do meu apartamento?</h3>
+              <p>Emitir a ART (Anotação de Responsabilidade Técnica) para sua reforma é uma etapa indispensável.
+                Não só um p...</p>
+              <a href="#">Saiba Mais</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card__bx" style="--clr: #5b98eb">
+          <div class="card__data">
+            <div class="card__icon">
+              <i class="fa-brands fa-searchengin"></i>
+            </div>
+            <div class="card__content">
+              <h3>Recolhimento ART</h3>
+              <p>
+                A Art deve ser recolhida e caso o contrato escrito ou verbal de execução de obras ou prestação de
+                serviços relativos às p...</p>
+              <a href="#">Saiba Mais</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card__bx" style="--clr: #5b98eb">
+          <div class="card__data">
+            <div class="card__icon">
+              <i class="fa-brands fa-searchengin"></i>
+            </div>
+            <div class="card__content">
+              <h3>Norma para reforma de apartamento</h3>
+              <p>A norma para reforma de apartamento pela ABNT (NBR 16.280:2015) estabelece todas as obras de reformas e
+                lista os requisi...</p>
+              <a href="#">Saiba Mais</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card__bx" style="--clr: #5b98eb">
+          <div class="card__data">
+            <div class="card__icon">
+              <i class="fa-brands fa-searchengin"></i>
+            </div>
+            <div class="card__content">
+              <h3>O que é ART?</h3>
+              <p>ART (Anotação de Responsabilidade Técnica) é um documento fornecido por um engenheiro e emitido através
+                do sistema do CREA...</p>
+              <a href="#">Saiba Mais</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card__bx" style="--clr: #5b98eb">
+          <div class="card__data">
+            <div class="card__icon">
+              <i class="fa-brands fa-searchengin"></i>
+            </div>
+            <div class="card__content">
+              <h3>Quanto custa uma ART?</h3>
+              <p>
+                Os valores de uma ART podem variar
+                de acordo com as características
+                técnicas, a amplitude e a complexibilidade...</p>
+              <a href="#">Saiba Mais</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card__bx" style="--clr: #5b98eb">
+          <div class="card__data">
+            <div class="card__icon">
+              <i class="fa-brands fa-searchengin"></i>
+            </div>
+            <div class="card__content">
+              <h3>Corro risco ao reformar meu imóvel sem ART?</h3>
+              <p>Sim! Além de segurança, coloca em risco os condôminos, uma vez que determinadas intervenções podem
+                desestabilizar até colapsar uma...</p>
+              <a href="#">Saiba Mais</a>
+            </div>
+          </div>
+        </div>
+
+      </section>
+    </main>
+
+    <footer>
+      <div class="contact-info">
+        <h2>Informações de Contato</h2>
+        <p>Telefone: (123) 456-7890</p>
+        <p>Email: exemplo@dominio.com</p>
+      </div>
+      <div class="social-media">
+        <h2>Siga-nos</h2>
+        <a href="https://www.instagram.com/seu_usuario" target="_blank">
+          <img src="./icons/instagram.svg" alt="Instagram">
+        </a>
+        <a href="https://wa.me/seu_numero_whatsapp" target="_blank">
+          <img src="./icons/whatsapp.svg" alt="WhatsApp">
+        </a>
+      </div>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    </footer>
+  </div>
 </body>
 
 </html>

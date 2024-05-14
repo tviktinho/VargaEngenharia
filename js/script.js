@@ -22,3 +22,15 @@ transporter.sendMail(mailOptions, function(error, info){
         console.log('Email enviado: ' + info.response);
     }
 });
+
+/*botao tema*/
+document.getElementById('theme-toggle').addEventListener('change', function() {
+    var body = document.body;
+    if (this.checked) {
+        body.classList.remove('light-theme');
+        body.classList.add('dark-theme');
+    } else {
+        body.classList.remove('dark-theme');
+        body.classList.add('light-theme');
+    }
+});
